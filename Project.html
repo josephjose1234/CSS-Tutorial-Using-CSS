@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--StyleHere-->
+    <title>CSS </title>
+</head>
+
+<body>
+
+    <div align="center">
+        <h1>CSS Tutorial Using CSS </h1>
+        <p>
+            CSS is the language we use to style a Web page.
+        </p>
+        <p>
+            <b>What is CSS?</b><br>
+            CSS stands for Cascading Style Sheets.
+            CSS describes how HTML elements are to be displayed on screen, paper, or in other media.
+            CSS saves a lot of work. It can control the layout of multiple web pages all at once.
+            External stylesheets are stored in CSS files.
+        </p>
+    </div>
+    <div>
+        <h1>Here we go</h1>
+    </div>
+    <div>
+        <!--ForTableOfContents-->
+    </div>
+    <section id="1">
+        <h3>CSS Syntax</h3>
+        <p>
+            A CSS comprises of style rules that are interpreted by the
+            browser and then applied to the corresponding elements in your
+            document. A style rule is made of three parts.
+        <ul>
+            <li>Selector − A selector is an HTML tag at which a style will be applied. This could be any tag like
+                &lt;h1&gt; or &lt;table&gt; etc.</li>
+            <li>Property − A property is a type of attribute of HTML tag. Put simply, all the HTML attributes are
+                converted into CSS properties. They could be color, border etc.</li>
+            <li>Value − Values are assigned to properties. For example, color property can have value either red or
+                #F1F1F1 etc.</li>
+        </ul>
+        <code>selector { property: value }</code>
+        <h4 {style="color: blue; font-size: 18px;" , }>For Example here</h4>
+        <p>
+
+            Here &lt;h4&gt; is the Selector,<br>
+            'Color ' is the Property that defines the Color.<br>
+            'font-size' is the Property sets the Font Size of the Text.
+            <br><b>Right Click then Inspect to View the Code</b>
+        </p>
+        </p>
+    </section>
+    <section id="2">
+        <h3>CSS Selectors</h3>
+        <p>
+            It is a pattern of elements and other terms that tell the browser which HTML elements should be selected to
+            have the CSS property values inside the rule applied to them.
+            <br> <b>Types of Selectors</b><br>
+            'Type' selectors target an HTML element such as an &lt;h1&gt;<br>
+            <code>
+            h1 {
+            }  
+        </code><br>
+            'Class' selectors target an element that has a specific value for its class attribute
+
+            <br> <code>.box {
+    }</code>
+            <br>'ID' selectors target an element that has a specific value for its id attribute
+            <br><code>#unique {
+    }</code>
+            <b>Other Sekectors are</b>
+        <ol>
+            <li>Attribute selectors</li>
+            <li>Pseudo-classes and pseudo-elements</li>
+            <li>Combinators</li>
+        </ol>
+        </p>
+    </section>
+    <section id="3">
+        <h3>Three Ways to add CSS</h3>
+        <p>
+
+            <b>External CSS</b>
+            <br>External CSS is a way to style your web pages by placing all the styling instructions in a separate
+            file. Instead of mixing styling rules with your HTML content, you create a separate file (usually with a
+            .css extension) that contains all your styling instructions. Then, you link this CSS file to your HTML
+            documents.
+            <br><b>Internal CSS</b><br>
+            Internal CSS, also known as embedded CSS or inline CSS, is a method of adding CSS (Cascading Style Sheets)
+            directly within an HTML document. With internal CSS, you define your styling rules inside the HTML
+            &lt;style&gt; element, which is typically placed within the document's &lt;head&gt; section
+            <br><b>Inline CSS</b><br>
+            Inline CSS is a method of adding CSS (Cascading Style Sheets) directly to individual HTML elements using the
+            style attribute.
+
+        </p>
+    </section>
+    <section id="4">
+        <h3>CSS Comments</h3>
+        <p>
+            A CSS comment is placed inside the &lt;style&gt; element, and starts with /* and ends with */
+        </p>
+
+    </section>
+    <section id="5">
+        <h3>CSS Colors</h3>
+        <p>
+            In CSS, a color can be specified by using a predefined color name
+        </p>
+        <h1 style="background-color:DodgerBlue;color: yellow;">For Example look here</h1>
+        <!--inside <h1> tag the "Inline CSS is used to define the background color of the <h1> tag."-->
+        <!--<h1 style="border:2px solid DodgerBlue;">Remove comments for View this Example</h1> -->
+        <!--We can use RGB,RGBA,HEX ,HSLetc-->
+    </section>
+    <section id="6">
+        <h3>CSS Backgrounds</h3>
+        <p>
+            The CSS background properties are used to add background effects for elements.
+        </p>
+        <ul>
+            <li><b>background-color</b> Sets the background color of an element</li>
+            <li><b>background-image</b> Sets the background image for an element</li>
+            <li><b>background-position</b> Sets the starting position of a background image</li>
+            <li><b>background-repeat</b> Sets how a background image will be repeated</li>
+            <li><b>background-attachment</b> Sets whether a background image is fixed or scrolls with the rest of the
+                page</li>
+            <li><b>background-size</b> Specifies the size of the background image(s)</li>
+
+        </ul>
+    </section>
+    <section id="7">
+        <h3>CSS Border</h3>
+
+        <p> <b>border</b> Sets all the border properties in one declaration<br>
+            <b>border-bottom</b> border-bottom Sets all the bottom border properties in one declaration<br>
+            <b>border-bottom-color</b> border-bottom-color Sets the color of the bottom border<br>
+            <b>border-bottom-style</b> Sets the style of the bottom border<br>
+            <b>border-bottom-width</b> Sets the width of the bottom border<br>
+            <b>border-color</b> Sets the color of the four borders<br>
+            <b>border-left</b> Sets all the left border properties in one declaration<br>
+            <b>border-left-color</b> Sets the color of the left border<br>
+            <b>border-left-style</b> Sets the style of the left border<br>
+            <b>border-left-width</b> Sets the width of the left border<br>
+            <b>border-radius</b> Sets all the four border-*-radius properties for rounded corners<br>
+            <b>border-right</b> Sets all the right border properties in one declaration<br>
+            <b>border-right-color</b> Sets the color of the right border<br>
+            <b>border-right-style</b> Sets the style of the right border<br>
+            <b>border-right-width</b> Sets the width of the right border<br>
+            <b>border-style</b> Sets the style of the four borders<br>
+            <b>border-top</b> Sets all the top border properties in one declaration<br>
+            <b>border-top-color</b> Sets the color of the top border<br>
+            <b>border-top-style</b> Sets the style of the top border<br>
+            <b>border-top-width</b> Sets the width of the top border<br>
+            <b>border-width</b> Sets the width of the four borders
+        </p>
+        <p style="border: 2px solid red;">Example of a border</p>
+    </section>
+    <section id="7">
+        <h3>CSS Margins</h3>
+        <p>
+            Margins are used to create space around elements, outside of any defined borders.
+        </p>
+        <p>
+            <b>margin</b> margin A shorthand property for setting all the margin properties in one declaration<br>
+            <b>margin-bottom </b> Sets the bottom margin of an element<br>
+            <b>margin-left</b> Sets the left margin of an element<br>
+            <b>margin-right</b> Sets the right margin of an element<br>
+            <b>margin-top</b> Sets the top margin of an element<br>
+        </p>
+        <p style="margin: 70px; border: 1px solid #4CAF50;">Some text with a margin and border</p>
+        <h4>Margin Collapse</h4>
+        <p>Top and bottom margins of elements are sometimes collapsed into a single margin that is equal to the largest
+            of the two margins.
+            This does not happen on left and right margins. Only top and bottom margins.</p>
+        <p style="margin: 20px 0;">Example For</p>
+        <!--Here the Bottom <p> tag has a margin of 50px, it is the largest,-->
+        <p style="margin: 50px 0;">Margin Collapse, Inspect the code Here</p>
+    </section>
+    <section id="8">
+        <h3>CSS Padding</h3>
+        <p>
+            Padding is used to create space around an element's content, inside of any defined borders.
+        </p>
+        <p>
+            <b>padding</b> padding A shorthand property for setting all the padding properties in one declaration<br>
+            <b>padding-bottom</b> Sets the bottom padding of an element<br>
+            <b>padding-left</b> Sets the left padding of an element<br>
+            <b>padding-right</b> Sets the right padding of an element<br>
+            <b>padding-top</b> Sets the top padding of an element<br>
+        </p>
+        <p style="margin: 20px; padding: 10px; background-color: #4CAF50; color: white;">Example for Padding with a
+            Margin</p>
+
+        <section id="9">
+            <h3>CSS Height,Width</h3>
+            <p></p>
+            <b>height</b> Sets the height of an element<br>
+            <b>max-height</b> Sets the maximum height of an element<br>
+            <b>max-width</b> Sets the maximum width of an element<br>
+            <b>min-height</b> Sets the minimum height of an element<br>
+            <b>min-width</b> Sets the minimum width of an element<br>
+            <b>width</b> Sets the width of an element<br>
+            </p>
+        </section>
+        <section id="10">
+            <h3>CSS Box Model</h3>
+            <p>
+                All HTML elements can be considered as boxes.<br>
+                In CSS, the term "box model" is used when talking about design and layout.
+                The CSS box model is essentially a box that wraps around every HTML element. It consists of: content,
+                padding, borders and margins. The image below illustrates the box model
+            </p>
+        </section>
+        <section id="11">
+            <h3>CSS Outline</h3>
+            <p>
+                An outline is a line drawn outside the element's border.
+            </p>
+            <div style=" border: 2px solid black;
+            outline: #4CAF50 solid 10px;
+            margin: auto;  
+            padding: 20px;
+            text-align: center;">
+                <p>This &lt;p&gt; tag has a 2px black border and a green outline with a width of 10px.</p>
+            </div>
+            <p>
+                <b>outline</b> A shorthand property for setting outline-width, outline-style, and outline-color in one
+                declaration<br>
+                <b>outline-color</b> Sets the color of an outline<br>
+                <b>outline-offset</b> Specifies the space between an outline and the edge or border of an element<br>
+                <b>outline-style</b> Sets the style of an outline<br>
+                <b>outline-width</b> Sets the width of an outline<br>
+            </p>
+        </section>
+        <section id="12">
+            <h3>CSS Text</h3>
+            <p>
+                CSS has a lot of properties for formatting text.
+            </p>
+            <p>
+                <b>text-shadow</b> Specifies the shadow effect added to text.
+                <b style="
+        text-shadow: 2px 2px #FF0000;
+      ">For Example</b>
+            </p>
+            <p>
+                <b>letter-spacing</b> Specifies the space between characters in a text.<br>
+                <b>line-height</b> Specifies the line height.<br>
+                <b>text-indent</b> Specifies the indentation of the first line in a text-block.<br>
+                <b>white-space</b> Specifies how to handle white-space inside an element.<br>
+                <b>word-spacing</b> Specifies the space between words in a text.<br>
+            </p>
+            <p>
+                <b>Text Transformation</b><br>
+                For Code ,Inspect
+            <p style="text-transform: uppercase;">This text is transformed to uppercase.</p>
+            <p style="text-transform: lowercase;">This text is transformed to lowercase.</p>
+            <p style="text-transform: capitalize;">This text is capitalized.</p>
+            </p>
+        </section>
+        <section id="13">
+            <h3>CSS Fonts</h3>
+            <p>
+                Choosing the right font has a huge impact on how the readers experience a website.<br>
+                <b>font Sets</b> all the font properties in one declaration.<br>
+                <b>font-family</b> Specifies the<b style="font-family: 'Arial', Times, serif;">font family</b> for
+                text.<br>
+                <b>font-size</b> Specifies the <b style="font-size: 24px;">Font Size</b> of text.<br>
+                <b>font-style</b> Specifies the <b style="font-style: italic;">Font Style</b> for text.<br>
+                <b>font-variant </b>Specifies whether or not a text should be displayed in a <b
+                    style="font-variant: small-caps;">Small Caps</b> font.<br>
+                <b>font-weight</b>font-weight Specifies the <b style="font-weight: bold;">Font Weight</b> of a font.<br>
+            </p>
+        </section>
+        <section id="14">
+            <h3>CSS Icons</h3>
+            <p>
+                Icons can easily be added to your HTML page, by using an icon library.
+            </p>
+        </section>
+        <section id="15">
+            <h3>CSS Links</h3>
+            <p>
+                <b><a style=" color: hotpink;" href="default.asp" target="_blank">This is a link</a></b></b><br>
+                <a href="#" style="color: red; text-decoration: none;" onmouseover="this.style.color='blue'"
+                    onmouseout="this.style.color='red'">This is Another Link</a>
+
+                <br><a href="#" style="font-weight: normal; text-decoration: none;"
+                    onmouseover="this.style.fontWeight='bold'" onmouseout="this.style.fontWeight='normal'">For the
+                    Secrert
+                    Inspect my code</a>
+            </p>
+        </section>
+        <secton id="16">
+            <h3>CSs Lists</h3>
+            <p>
+                <b>list-style</b> Sets all the properties for a list in one declaration.<br>
+                <b>list-style-image</b> Specifies an image as the list-item marker.<br>
+                <b>list-style-position</b> Specifies the position of the list-item markers (bullet points).<br>
+                <b>list-style-type</b> list-style-type Specifies the type of list-item marker.<br>
+
+            </p>
+        </secton>
+        <section id="17">
+            <h3> CSS Tables</h3>
+            <p>The look of an HTML table can be greatly improved with CSS<br>
+                <b>border</b> Sets all the border properties in one declaration.<br>
+                <b>border-collapse</b> Specifies whether or not table borders should be collapsed.<br>
+                <b>border-spacing</b> Specifies the distance between the borders of adjacent cells.<br>
+                <b>caption-side</b> Specifies the placement of a table caption.<br>
+                <b>empty-cells</b> Specifies whether or not to display borders and background on empty cells in a
+                table.<br>
+                <b>table-layout</b> Sets the layout algorithm to be used for a table
+            </p>
+        </section>
+        <section id="18">
+            <h3>CSS Display/Visibility Properties</h3>
+            <p>
+                <b>display </b>Specifies how an element should be displayed.<br>
+                <b>visibility</b> Specifies whether or not an element should be visible.<br>
+            </p>
+        </section>
+        <section id="19">
+            <h3>CSS Overflow</h3>
+
+            <p>
+                The CSS overflow property controls what happens to content that is too big to fit into an area.<br>
+                
+                <div style="background-color: coral;
+                width: 200px;
+                height: 100px;
+                border: 1px solid black;
+                overflow: scroll;" ><b>For Example</b>You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box.</div>
+        <b>overflow</b>	Specifies what happens if content overflows an element's box.<br>
+        <b>overflow-wrap</b> 	Specifies whether or not the browser can break lines with long words, if they overflow its container.<br>
+        <b>overflow-x</b> 	Specifies what to do with the left/right edges of the content if it overflows the element's content area.<br>
+        <b>overflow-y</b> 	Specifies what to do with the top/bottom edges of the content if it overflows the element's content area.<br>
+        </p>
+        </section>
+        <section id="20">
+            <h3>CSS Navbar</h3>
+            <p style="display: inline;"><ul  style="list-style-type: none;
+                margin: 0;
+                padding: 0;">
+                <li style="display: inline;"><a href="#home">Home</a></li>
+                <li style="display: inline;" ><a href="#news">News</a></li>
+                <li style="display: inline;"><a href="#contact">Contact</a></li>
+                <li style="display: inline;"><a href="#about">About</a></li>
+              </ul></p>
+        </section>
+        <section id="21">
+            <h3>CSS Counters</h3>
+            
+        </section>
+        <section id="">
+            <h3></h3>
+        </section>
+        <section id="">
+            <h3></h3>
+        </section>
+
+</body>
+
+</html>
