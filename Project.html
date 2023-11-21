@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html style="background-color: rgb(32, 45, 54);">
 <!--AddReadmeFile
 CloneThisRepositoryAndLearnFromIt
 1.AddLinksToTheSections.
@@ -7,17 +7,29 @@ CloneThisRepositoryAndLearnFromIt
 -->
 <head>
     <!--StyleHere-->
+    <style>
+         /* Styling properties of class TextColor */
+        .TextColor {
+            color: green;
+        }
+        /* here we use the tag itself as an Selector*/
+        h3 {
+        background-color:  rgb(17, 30, 39);
+        text-align: center;
+        }
+    </style>
     <title>CSS </title>
 </head>
 
-<body>
+<body style="color: white;">
 
-    <div align="center">
-        <h1>CSS Tutorial Using CSS </h1>
-        <p>
+    <div 
+    style="text-align: center; margin-top: 20px; background-color: #898585; padding: 10px;">
+        <h1 style="color: rgb(254, 3, 3); font-size: 28px; text-align: center; font-family: 'Arial', sans-serif; font-weight: bold;">CSS Tutorial Using CSS</h1>
+        <p  >
             CSS is the language we use to style a Web page.
         </p>
-        <p>
+        <p >
             <b>What is CSS?</b><br>
             CSS stands for Cascading Style Sheets.
             CSS describes how HTML elements are to be displayed on screen, paper, or in other media.
@@ -25,49 +37,59 @@ CloneThisRepositoryAndLearnFromIt
             External stylesheets are stored in CSS files.
         </p>
     </div>
-    <div>
-        <h1>Here we go</h1>
+    <div >
+        <!--Example of Inline CSS-->
+        <h1 style="background-color:  rgb(17, 30, 39);text-align: center;">Here we go</h1>
     </div>
-    <div>
-        <table>
-            <tr>
-                <td><a href="1">CSS Syntax</a></td>
-                <td><a href="10">CSS Syntax</a></td>
-                <td><a></a></td>
-                <td><a></a></td>
-                <td><a></a></td>
-                <td><a></a></td>
-                <td><a></a></td>
+    <hr>
+    <div >
+        <table cellspacing="10"  >
+            <tr >
+                <!--Here Look For Inline CSS, Applying white color for Text inside <a> Tag-->
+                <td  ><a href="#1"style="color: green;" >CSS Syntax</a></td>
+                <td  ><a href="#2"style="color: green;">Ways to Add CSS</a></td>
+                <td  ><a href="#2"style="color: green;">Ways to Add CSS</a></td>
+                <td  ><a href="#3"style="color: green;">Comments</a></td>
+                <td  ><a href="#4"style="color: green;">Colors</a></td>
+                <td  ><a href="#5"style="color: green;">Backgrounds</a></td>
+                <td  ><a href="#6"style="color: green;">Border</a></td>
+                <td  ><a href="#7"style="color: green;">Margins</a></td>
             </tr>
             <tr>
-                <td><a></a></td>
-                <td><a></a></td>
-                <td><a></a></td>
-                <td><a></a></td>
-                <td><a></a></td>
-                <td><a></a></td>
+                <!--Here Look For Internal CSS, for applying white color for the text inside <a> Tag-->
+                <td><a href="#8" class="TextColor">Padding</a></td>
+                <td><a href="#9" class="TextColor">Height,Width</a></td>
+                <td><a href="#10" class="TextColor">Box Model</a></td>
+                <td><a href="#11" class="TextColor">Outline</a></td>
+                <td><a href="#12" class="TextColor">Text</a></td>
+                <td><a href="#13" class="TextColor">Fonts</a></td>
+                <td><a href="#14" class="TextColor">Icons</a></td>
             </tr>
             <tr>
-                <td><a></a></td>
-                <td><a></a></td>
-                <td><a></a></td>
-                <td><a></a></td>
-                <td><a></a></td>
+                <td><a href="#15" class="TextColor">Links</a></td>
+                <td><a href="#16" class="TextColor">Lists</a></td>
+                <td><a href="#17" class="TextColor">Tables</a></td>
+                <td><a href="#18" class="TextColor">Display/Visibilty</a></td>
+                <td><a href="#19" class="TextColor">Overflow</a></td>
+                <td><a href="#20" class="TextColor">NavBar</a></td>
+                <td><a href="#21" class="TextColor">Counter</a></td>
+            </tr>
+            <tr>
+                <td><a href="#22" class="TextColor">!important</a></td>
+                <td><a href="#23" class="TextColor">Calc()</a></td>
                 <td><a></a></td>
             </tr>
             
         </table>
     </div>
-    <div>
-        <!--ForTableOfContents-->
-    </div>
-    <section id="1">
-        <h3>CSS Syntax</h3>
-        <p>
+    <hr><!-- <hr> adds a Horizontal Line-->
+    <section id="1" >
+        <h3 >CSS Syntax</h3>
+        <p >
             A CSS comprises of style rules that are interpreted by the
             browser and then applied to the corresponding elements in your
             document. A style rule is made of three parts.
-        <ul>
+        <ul >
             <li>Selector − A selector is an HTML tag at which a style will be applied. This could be any tag like
                 &lt;h1&gt; or &lt;table&gt; etc.</li>
             <li>Property − A property is a type of attribute of HTML tag. Put simply, all the HTML attributes are
@@ -75,9 +97,12 @@ CloneThisRepositoryAndLearnFromIt
             <li>Value − Values are assigned to properties. For example, color property can have value either red or
                 #F1F1F1 etc.</li>
         </ul>
-        <code>selector { property: value }</code>
-        <h4 {style="color: blue; font-size: 18px;" , }>For Example here</h4>
-        <p>
+        <code >selector { property: value }</code>
+        <!--Here <h4> is the Selector,
+            'Color ' is the Property that defines the Color.
+            'font-size' is the Property sets the Font Size of the Text.-->
+        <h4 {style="color: blue; font-size: 18px;"  }>For Example Look at Me!</h4>
+        <p >
 
             Here &lt;h4&gt; is the Selector,<br>
             'Color ' is the Property that defines the Color.<br>
@@ -104,7 +129,7 @@ CloneThisRepositoryAndLearnFromIt
             <br>'ID' selectors target an element that has a specific value for its id attribute
             <br><code>#unique {
     }</code>
-            <b>Other Sekectors are</b>
+            <b>Other Selectors are</b>
         <ol>
             <li>Attribute selectors</li>
             <li>Pseudo-classes and pseudo-elements</li>
@@ -132,30 +157,29 @@ CloneThisRepositoryAndLearnFromIt
         </p>
     </section>
     <section id="4">
-        <h3>CSS Comments</h3>
+        <h3 >CSS Comments</h3>
         <p>
             A CSS comment is placed inside the &lt;style&gt; element, and starts with /* and ends with */
         </p>
-
     </section>
     <section id="5">
         <h3>CSS Colors</h3>
         <p>
-            In CSS, a color can be specified by using a predefined color name
+            In CSS, a color can be specified by using a predefined color names.
         </p>
-        <h1 style="background-color:DodgerBlue;color: yellow;">For Example look here</h1>
+        <h1 style="background-color:green;color:white;/*For Live Example change the colors here to blue and yellow*/">For Example look here</h1>
         <!--inside <h1> tag the "Inline CSS is used to define the background color of the <h1> tag."-->
         <!--<h1 style="border:2px solid DodgerBlue;">Remove comments for View this Example</h1> -->
         <!--We can use RGB,RGBA,HEX ,HSLetc-->
     </section>
     <section id="6">
         <h3>CSS Backgrounds</h3>
-        <p>
+        <p style="background-color: rgb(13, 101, 243);">
             The CSS background properties are used to add background effects for elements.
         </p>
         <ul>
             <li><b>background-color</b> Sets the background color of an element</li>
-            <li><b>background-image</b> Sets the background image for an element</li>
+            <li><b >background-image</b> Sets the background image for an element</li>
             <li><b>background-position</b> Sets the starting position of a background image</li>
             <li><b>background-repeat</b> Sets how a background image will be repeated</li>
             <li><b>background-attachment</b> Sets whether a background image is fixed or scrolls with the rest of the
@@ -164,7 +188,8 @@ CloneThisRepositoryAndLearnFromIt
 
         </ul>
     </section>
-    <section id="7">
+    <section id="7" style="border: 2px solid green;/*here the border is 2pixel wide and 
+    has a color of red, you can change color & width*/">
         <h3>CSS Border</h3>
 
         <p> <b>border</b> Sets all the border properties in one declaration<br>
@@ -246,6 +271,7 @@ CloneThisRepositoryAndLearnFromIt
                 The CSS box model is essentially a box that wraps around every HTML element. It consists of: content,
                 padding, borders and margins. The image below illustrates the box model
             </p>
+            <!--BoxModel-->
         </section>
         <section id="11">
             <h3>CSS Outline</h3>
@@ -276,7 +302,7 @@ CloneThisRepositoryAndLearnFromIt
             <p>
                 <b>text-shadow</b> Specifies the shadow effect added to text.
                 <b style="
-        text-shadow: 2px 2px #FF0000;
+        text-shadow: 2px 2px #00ff08;
       ">For Example</b>
             </p>
             <p>
@@ -287,7 +313,7 @@ CloneThisRepositoryAndLearnFromIt
                 <b>word-spacing</b> Specifies the space between words in a text.<br>
             </p>
             <p>
-                <b>Text Transformation</b><br>
+                <b>Text Transformation</b><br><br>
                 For Code ,Inspect
             <p style="text-transform: uppercase;">This text is transformed to uppercase.</p>
             <p style="text-transform: lowercase;">This text is transformed to lowercase.</p>
@@ -299,13 +325,13 @@ CloneThisRepositoryAndLearnFromIt
             <p>
                 Choosing the right font has a huge impact on how the readers experience a website.<br>
                 <b>font Sets</b> all the font properties in one declaration.<br>
-                <b>font-family</b> Specifies the<b style="font-family: 'Arial', Times, serif;">font family</b> for
+                <b>font-family</b> Specifies the<b style="font-family: 'Arial', Times, serif;color: green;">font family</b> for
                 text.<br>
-                <b>font-size</b> Specifies the <b style="font-size: 24px;">Font Size</b> of text.<br>
-                <b>font-style</b> Specifies the <b style="font-style: italic;">Font Style</b> for text.<br>
+                <b>font-size</b> Specifies the <b style="font-size: 24px;color: green;">Font Size</b> of text.<br>
+                <b>font-style</b> Specifies the <b style="font-style: italic;color: green;">Font Style</b> for text.<br>
                 <b>font-variant </b>Specifies whether or not a text should be displayed in a <b
-                    style="font-variant: small-caps;">Small Caps</b> font.<br>
-                <b>font-weight</b>font-weight Specifies the <b style="font-weight: bold;">Font Weight</b> of a font.<br>
+                    style="font-variant: small-caps;color: green;">Small Caps</b> font.<br>
+                <b>font-weight</b>font-weight Specifies the <b style="font-weight: bold;color: green;">Font Weight</b> of a font.<br>
             </p>
         </section>
         <section id="14">
@@ -318,17 +344,15 @@ CloneThisRepositoryAndLearnFromIt
             <h3>CSS Links</h3>
             <p>
                 <b><a style=" color: hotpink;" href="default.asp" target="_blank">This is a link</a></b></b><br>
-                <a href="#" style="color: red; text-decoration: none;" onmouseover="this.style.color='blue'"
-                    onmouseout="this.style.color='red'">This is Another Link</a>
+                <a href="#" style="color: red; text-decoration: none;" onmouseover="this.style.color='white'"
+                    onmouseout="this.style.color='green'">This is Another Link that changes color when hovers</a>
 
                 <br><a href="#" style="font-weight: normal; text-decoration: none;"
-                    onmouseover="this.style.fontWeight='bold'" onmouseout="this.style.fontWeight='normal'">For the
-                    Secrert
-                    Inspect my code</a>
+                    onmouseover="this.style.fontWeight='bold';this.style.color='white'" onmouseout="this.style.fontWeight='normal'">Iam a Link that changes to <b>BOLD</b> when hovered</a>
             </p>
         </section>
         <secton id="16">
-            <h3>CSs Lists</h3>
+            <h3>CSS Lists</h3>
             <p>
                 <b>list-style</b> Sets all the properties for a list in one declaration.<br>
                 <b>list-style-image</b> Specifies an image as the list-item marker.<br>
@@ -336,7 +360,7 @@ CloneThisRepositoryAndLearnFromIt
                 <b>list-style-type</b> list-style-type Specifies the type of list-item marker.<br>
 
             </p>
-        </secton>
+        </section>
         <section id="17">
             <h3> CSS Tables</h3>
             <p>The look of an HTML table can be greatly improved with CSS<br>
@@ -353,7 +377,8 @@ CloneThisRepositoryAndLearnFromIt
             <h3>CSS Display/Visibility Properties</h3>
             <p>
                 <b>display </b>Specifies how an element should be displayed.<br>
-                <b>visibility</b> Specifies whether or not an element should be visible.<br>
+                <b>visibility</b> Specifies whether or not an element should be visible.<br><b>Someone is Hiding Here</b>
+                <p style="display: block;/* change the display property to 'block' to unhide this element*/"> Iam Hiding Myself </p>
             </p>
         </section>
         <section id="19">
@@ -375,17 +400,16 @@ CloneThisRepositoryAndLearnFromIt
         </section>
         <section id="20">
             <h3>CSS Navbar</h3>
-            <p style="display: inline;"><ul  style="list-style-type: none;
-                margin: 0;
-                padding: 0;">
-                <li style="display: inline;"><a href="#home">Home</a></li>
-                <li style="display: inline;" ><a href="#news">News</a></li>
-                <li style="display: inline;"><a href="#contact">Contact</a></li>
-                <li style="display: inline;"><a href="#about">About</a></li>
-              </ul><br>
+            <p style="display: inline; "><br>
               Having easy-to-use navigation is important for any web site.
               With CSS you can transform boring HTML menus into good-looking navigation bars.</p>
-        </section>
+              <div style="background-color: #333; overflow: hidden;">
+                <a href="#" style="float: left; display: block; color: white; text-align: center; padding: 14px 16px; text-decoration: none;">Profile</a>
+                <a href="#" style="float: left; display: block; color: white; text-align: center; padding: 14px 16px; text-decoration: none;">About</a>
+                <a href="#" style="float: left; display: block; color: white; text-align: center; padding: 14px 16px; text-decoration: none;">Hello</a>
+                <a href="#" style="float: left; display: block; color: white; text-align: center; padding: 14px 16px; text-decoration: none;">Contact</a>
+            </div>
+            </section>
         <section id="21">
             <h3>CSS Counters</h3>
             <p><b>Use Counters in the sections in this whole tutorial page</b></p>
@@ -407,7 +431,14 @@ CloneThisRepositoryAndLearnFromIt
             border: 1px solid black;
             background-color: yellow;
             padding: 5px;"-->
-            <b>For Example </b>
+            
+            <p>The calc() function in CSS allows you to perform mathematical operations 
+                right in your style declarations. It is particularly useful when specifying
+                 property values that involve complex calculations, making it easier to create 
+                 responsive layouts and apply dynamic styles. The calc() function can be used with 
+                 various CSS properties, such as width, height, margin, padding, and more.
+                Here's the basic syntax of the calc() function.<br>
+                property: calc(expression);</p>
             <div style="position: absolute;
             left: 50px;
             width: calc(100% - 100px);  
